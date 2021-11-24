@@ -1,0 +1,90 @@
+.product {
+  margin-bottom: 10rem;
+  .expandMore {
+    display: block;
+    margin: auto;
+    background-color: $purple-color;
+    padding: 2rem 10rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 10px rgba($color: #000000, $alpha: 0.3);
+    transition: all 0.2s linear;
+    &:hover {
+      transform: translateY(-3px);
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+    @include mobile {
+      padding: 2rem 5rem;
+      svg {
+        font-size: 2rem;
+      }
+    }
+    svg {
+      font-size: 3rem;
+    }
+  }
+}
+.product-card {
+  height: 47rem;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  border: 1px solid $purple-color;
+  box-shadow: 3px 6px 10px rgba($color: #000000, $alpha: 0.3);
+  border-radius: 1rem;
+  figure {
+    overflow: hidden;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    @include tablet {
+      height: 55%;
+    }
+    @include mobile {
+      height: 70%;
+    }
+  }
+  &__img {
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s linear;
+  }
+  &:hover &__img {
+    transform: scale(1.2);
+  }
+
+  &__content {
+    height: 30%;
+
+    padding-block: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      height: 45%;
+    }
+    @include mobile {
+      height: 30%;
+    }
+    &-title {
+      text-align: center;
+      margin-block: 1rem;
+      font-size: 2rem;
+    }
+    &-rating {
+     
+      margin-bottom: 1rem;
+    }
+    &-price {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+}

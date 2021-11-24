@@ -1,0 +1,26 @@
+.filter-bar{
+    padding: 3rem;
+    background-color: $dark-white-color;
+    margin-bottom: 10rem;
+
+    h4{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    input,select{
+        border: none;
+        outline: none;
+        background-color: none;
+        width: 100%;
+        font-size: 1.8rem;
+        border: 1px solid $gray-color;
+        padding: 1rem 1.2rem;
+        border-radius: 5px;
+        &:focus{
+            border-color: $purple-color;
+        }
+        
+        
+    }
+    
+}

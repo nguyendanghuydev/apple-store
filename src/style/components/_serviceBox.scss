@@ -1,0 +1,27 @@
+.service-box {
+  margin-bottom: 10rem;
+}
+.service-card {
+  padding: 3rem 4rem;
+  background-color: $dark-white-color;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 10px rgba($color: #000000, $alpha: 0.3);
+  transition: all 0.3s linear;
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__icon {
+    svg {
+      font-size: 5rem;
+      color: $purple-color;
+    }
+  }
+  &__title {
+    font-size: 2.5rem;
+  }
+  &__description {
+    color: $gray-color;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  padding-block: 4rem;
+  background-color: $dark-white-color;
+  ul li:first-child {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  ul li:not(:first-child) {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  &__logo {
+      text-align: center;
+      @include tablet{
+          text-align: start;
+      }
+      @include mobile{
+        text-align: center;
+    }
+    img {
+      height: 12rem;
+    }
+  }
+}

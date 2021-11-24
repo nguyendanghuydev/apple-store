@@ -1,0 +1,139 @@
+.header {
+  height: $max-header-height;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  background-color: $purple-color;
+  color: $white-color;
+  transition: all 0.5s linear;
+  &.shrink {
+    position: fixed;
+    width: 100%;
+    box-shadow: 3px 6px 10px rgba($color: #000000, $alpha: 0.1);
+    transition: all 0.5s linear;
+  }
+  @include tablet {
+    height: $max-header-tablet-height;
+  }
+  @include mobile {
+    height: $max-header-mobile-height;
+  }
+
+  .container {
+    height: 100%;
+  }
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  //logo
+  &__logo {
+    width: 5rem;
+    @include tablet {
+      width: 4rem;
+    }
+    @include mobile {
+      width: 2.3rem;
+    }
+  }
+
+  //nav and user
+  &__nav-items,
+  &__user-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    @include tablet {
+      gap: 2.5rem;
+    }
+  }
+  &__nav-item a,
+  &__user-item a {
+    display: block;
+    font-size: 2.3rem;
+    padding: 2.2rem 1.5rem;
+    border-bottom: 0.4rem solid transparent;
+    &:hover {
+      border-bottom-color: $white-color;
+    }
+    @include tablet {
+      font-size: 2rem;
+      padding: 1.8rem 1.3rem;
+      border-bottom: 0.3rem solid transparent;
+    }
+    @include mobile {
+      font-size: 1.8rem;
+      padding: 1.6rem 1.3rem;
+      border-bottom: 0.2rem solid transparent;
+    }
+  }
+  &__user-item svg {
+    font-size: 2.3rem;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+    @include mobile {
+      font-size: 1.8rem;
+    }
+  }
+
+  .header__nav {
+    @include tablet {
+      position: fixed;
+      inset: $max-header-tablet-height 30% 0 0;
+      background-color: rgba($color: $purple-color, $alpha: 1);
+      z-index: 1002;
+      transform: translateX(-100%);
+      opacity: 0;
+      transition: all 0.4s linear;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      &-items {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5vh 10rem;
+      }
+    }
+    @include mobile {
+      inset: $max-header-mobile-height 30% 0 0;
+      &-items {
+        padding: 5vh 3rem;
+      }
+    }
+  }
+
+  // menu toggle
+  &__menu-toggle {
+    display: none;
+    text-align: start;
+    @include tablet {
+      padding-inline: 1.3rem;
+      display: block;
+    }
+    div {
+      height: 3px;
+      width: 2.2rem;
+      background-color: $white-color;
+      transition: all 0.3s linear;
+      &:not(:first-child) {
+        margin-top: 0.2rem;
+      }
+    }
+    &.active div:nth-child(1) {
+      transform: rotate(45deg) translateY(3px);
+    }
+    &.active div:nth-child(2) {
+      display: none;
+    }
+    &.active div:nth-child(3) {
+      transform: rotate(-45deg) translateY(-3px);
+    }
+  }
+}
