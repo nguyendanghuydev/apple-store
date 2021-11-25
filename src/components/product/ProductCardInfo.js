@@ -1,12 +1,9 @@
 import { ShoppingBasket, ShoppingCart } from "@mui/icons-material";
 import { Rating } from "@mui/material";
-import { addItemToCart } from "../../redux/cartSlice";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+
 function ProductCardInfo(props) {
-  const { item, auth = false } = props;
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  const { item, addToCartClickHandler, buyClickHandler } = props;
+
   function format(n) {
     return n.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
@@ -14,22 +11,6 @@ function ProductCardInfo(props) {
   if (item.price) {
     price = format(item.price);
   }
-
-  const addToCartClickHandler = async () => {
-    if (auth) {
-      await dispatch(addItemToCart(item));
-    } else {
-      navigate("/login");
-    }
-  };
-  const buyClickHandler = async () => {
-    if (auth) {
-      await dispatch(addItemToCart(item));
-      navigate("/cart");
-    } else {
-      navigate("/login");
-    }
-  };
 
   return (
     <div className="product-card-info">

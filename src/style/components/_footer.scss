@@ -1,6 +1,8 @@
 .footer {
+  margin-top: auto;
   padding-block: 4rem;
-  background-color: $dark-white-color;
+  border-top: 2px solid $dark-white-color;
+
   ul li:first-child {
     font-size: 2rem;
     margin-bottom: 2rem;

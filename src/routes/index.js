@@ -9,6 +9,7 @@ import ProductDetail from "../pages/ProductDetail";
 import LogIn from "../components/logIn";
 import SignUp from "../components/signUp";
 import User from "../pages/User.js";
+import Cart from "../pages/Cart";
 
 function RoutesPage() {
   const userId = useSelector((state) => state.user.id);
@@ -21,8 +22,9 @@ function RoutesPage() {
       <Route path="/Accessories" element={<Accessory />}></Route>
       <Route path="/login" element={<LogIn />}></Route>
       <Route path="/signup" element={<SignUp />}></Route>
-      {userId && <Route path="user" element={<User />}></Route>}
       <Route path="/product/:slug" element={<ProductDetail />}></Route>
+      {userId && <Route path="user" element={<User />}></Route>}
+      {userId && <Route path="/cart" element={<Cart/>}></Route>}
     </Routes>
   );
 }
