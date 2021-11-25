@@ -11,7 +11,7 @@ function ProductCard(props) {
   return (
     <Link
       className="product-card"
-      to={`${item.categorySlug}/${item.slug}`}
+      to={`/product/${item.slug}`}
       data-aos={aos}
     >
       <figure>

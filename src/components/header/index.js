@@ -1,34 +1,44 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart, Person, Logout } from "@mui/icons-material";
+import { Badge } from "@mui/material";
+import { useSelector } from "react-redux";
 import logo from "../../assets/images/logo.png";
 import Backdrop from "../backdrop/index";
-
+import { auth } from "../../firebase";
+import { signOut } from "firebase/auth";
+import { useDispatch } from "react-redux";
+import { updateUser } from "../../redux/userSlice.js";
 function Header() {
   const [openBackdrop, setOpenBackdrop] = useState(false);
   const menuToggleRef = useRef();
   const navRef = useRef();
   const headerRef = useRef();
+  const userId = useSelector((state) => state.user.id);
+  const totalCart = useSelector((state) => state.cart.totalQuantity);
+  const dispatch = useDispatch();
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      let scrollY = window.pageYOffset;
-      if (scrollY > 90) {
-        headerRef.current.classList.add("shrink");
-      } else {
-        headerRef.current.classList.remove("shrink");
-      }
-    });
-    return () => {
-        window.removeEventListener('scroll')
-    };
-  }, []);
 
+  const logOutClickHandler = () => {
+    signOut(auth)
+      .then(async (result) => {
+        const resetUser = {
+          id: null,
+          email: null,
+          name: null,
+          phoneNumber: null,
+          address: null,
+          gender: null,
+        };
+        await dispatch(updateUser(resetUser));
+        backdropClickHandler();
+      })
+      .catch((err) => console.log("err"));
+  };
   const backdropClickHandler = function () {
     setOpenBackdrop(false);
     menuToggleRef.current.classList.remove("active");
     navRef.current.classList.remove("active");
-
   };
 
   const menuToggleClickHandler = function (e) {
@@ -44,7 +54,7 @@ function Header() {
 
   return (
     <>
-      <header className="header" ref={headerRef}>
+      <header className="header shrink" ref={headerRef}>
         <div className="container">
           <div className="header__container">
             <div
@@ -62,36 +72,59 @@ function Header() {
             <nav className="header__nav" ref={navRef}>
               <ul className="header__nav-items">
                 <li className="header__nav-item">
-                  <Link to="/iphone">Iphone</Link>
+                  <Link onClick={backdropClickHandler} to="/iphone">
+                    Iphone
+                  </Link>
                 </li>
                 <li className="header__nav-item">
-                  <Link to="/ipad">Ipad</Link>
+                  <Link onClick={backdropClickHandler} to="/ipad">
+                    Ipad
+                  </Link>
                 </li>
                 <li className="header__nav-item">
-                  <Link to="/macbook">MacBook</Link>
+                  <Link onClick={backdropClickHandler} to="/macbook">
+                    MacBook
+                  </Link>
                 </li>
                 <li className="header__nav-item">
-                  <Link to="/accessories">phụ kiện</Link>
+                  <Link onClick={backdropClickHandler} to="/accessories">
+                    phụ kiện
+                  </Link>
                 </li>
               </ul>
             </nav>
-            <ul className="header__user-items">
-              <li className="header__user-item">
-                <Link to="/cart">
-                  <ShoppingCart />
+            {userId && (
+              <ul className="header__user-items">
+                <li className="header__user-item">
+                  <Link onClick={backdropClickHandler} to="/cart">
+                    <Badge
+                      badgeContent={totalCart}
+                      style={{ fontSize: "2rem" }}
+                      color="secondary"
+                    >
+                      <ShoppingCart />
+                    </Badge>
+                  </Link>
+                </li>
+                <li className="header__user-item">
+                  <Link onClick={backdropClickHandler} to="/user">
+                    <Person></Person>
+                  </Link>
+                </li>
+                <li className="header__user-item">
+                  <Link onClick={logOutClickHandler} to="/">
+                    <Logout></Logout>
+                  </Link>
+                </li>
+              </ul>
+            )}
+            {!userId && (
+              <div className="header__nav-item">
+                <Link onClick={backdropClickHandler} to="/login">
+                  Log in
                 </Link>
-              </li>
-              <li className="header__user-item">
-                <Link to="/user">
-                  <Person></Person>
-                </Link>
-              </li>
-              <li className="header__user-item">
-                <Link to="/">
-                  <Logout></Logout>
-                </Link>
-              </li>
-            </ul>
+              </div>
+            )}
           </div>
         </div>
       </header>

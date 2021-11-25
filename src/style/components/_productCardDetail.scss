@@ -1,0 +1,26 @@
+.product-card-detail {
+  padding: 2rem 4rem;
+  background-color: $dark-white-color;
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-block: 2rem;
+    color: $purple-color;
+  }
+  &__hightLight-list {
+    list-style: circle;
+    font-size: 400;
+    margin-bottom: 2.5rem;
+  }
+  &__description {
+    
+    & p {
+
+      & span {
+        font-size: 2rem;
+        color: $purple-color;
+        margin-right: 5px;
+      }
+    }
+  }
+}

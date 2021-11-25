@@ -1,0 +1,78 @@
+.product-card-info {
+  padding: 5rem 3rem;
+  &__container {
+    display: flex;
+    gap: 10rem;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__img {
+    flex: 3;
+  }
+  &__content {
+    flex: 7;
+    &-title {
+      font-size: 5rem;
+      margin-bottom: 3rem;
+      @include tablet {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+      @include mobile {
+        font-size: 3.5rem;
+        margin-bottom: 1.8rem;
+      }
+    }
+    &-review {
+      & p {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        color: $gray-color;
+      }
+    }
+    &-price {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &-btn {
+      display: inline-block;
+      border: none;
+      outline: none;
+      color: $white-color;
+      font-size: 2rem;
+      font-weight: 500;
+      background-color: $purple-color;
+      margin: 2rem 2rem 2rem 0;
+      padding: 1.8rem 3.5rem;
+      border-radius: 2rem;
+      border: 1px solid $purple-color;
+      transition: all 0.3s linear;
+      box-shadow: 3px 3px 4px rgba($color: #000000, $alpha: 0.3);
+      cursor: pointer;
+      @include tablet {
+        padding: 1.4rem 3rem;
+      }
+      @include mobile {
+        padding: 1.4rem 2.5rem;
+        margin-inline: auto;
+        width: 80%;
+      }
+      svg {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+      &:hover {
+        transform: translateY(-3px);
+        background-color: $white-color;
+        color: $purple-color;
+      }
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+}

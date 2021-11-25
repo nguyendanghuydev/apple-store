@@ -46,6 +46,14 @@ const dataProduct = [
     img: macbook1,
     categorySlug: "macbook",
     slug: "macbook-pro-2021",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
   },
   {
     id: 2,
@@ -54,7 +62,15 @@ const dataProduct = [
     star: 4,
     img: macbook2,
     categorySlug: "macbook",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "macbook-pro-16-inch-2021",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 3,
@@ -63,7 +79,15 @@ const dataProduct = [
     star: 4,
     img: macbook3,
     categorySlug: "macbook",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "macbook-m1-2021",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 4,
@@ -72,7 +96,15 @@ const dataProduct = [
     star: 5,
     img: macbook4,
     categorySlug: "macbook",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "macbook-pro-14-inch-2021",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 5,
@@ -81,7 +113,15 @@ const dataProduct = [
     star: 3,
     img: macbook5,
     categorySlug: "macbook",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "macbook-air-2021",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 6,
@@ -90,7 +130,15 @@ const dataProduct = [
     star: 4,
     img: ipad1,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-10-inch-4g-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 7,
@@ -99,7 +147,15 @@ const dataProduct = [
     star: 5,
     img: ipad2,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-10-inch-wifi-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 8,
@@ -108,7 +164,15 @@ const dataProduct = [
     star: 3,
     img: ipad3,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-air-wifi-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 9,
@@ -117,7 +181,15 @@ const dataProduct = [
     star: 4,
     img: ipad4,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-air-wifi-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 10,
@@ -126,7 +198,15 @@ const dataProduct = [
     star: 5,
     img: ipad5,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-mini-wifi-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 11,
@@ -135,7 +215,15 @@ const dataProduct = [
     star: 5,
     img: ipad6,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-11-inch-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 12,
@@ -144,7 +232,15 @@ const dataProduct = [
     star: 4,
     img: ipad7,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-12-inch-32gb",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 13,
@@ -153,7 +249,15 @@ const dataProduct = [
     star: 3,
     img: ipad8,
     categorySlug: "ipad",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "ipad-air",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 14,
@@ -162,7 +266,15 @@ const dataProduct = [
     star: 5,
     img: iphone1,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-13-white",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 15,
@@ -171,7 +283,15 @@ const dataProduct = [
     star: 4,
     img: iphone2,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-13-red",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 16,
@@ -180,7 +300,15 @@ const dataProduct = [
     star: 5,
     img: iphone3,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-13-pro-silver",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 17,
@@ -189,7 +317,15 @@ const dataProduct = [
     star: 5,
     img: iphone4,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-13-black",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 18,
@@ -198,7 +334,15 @@ const dataProduct = [
     star: 4,
     img: iphone5,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-12-red",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 19,
@@ -207,7 +351,15 @@ const dataProduct = [
     star: 4,
     img: iphone6,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-12-blue",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 20,
@@ -216,7 +368,15 @@ const dataProduct = [
     star: 5,
     img: iphone7,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-12-mini-blue",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 21,
@@ -225,7 +385,15 @@ const dataProduct = [
     star: 4,
     img: iphone8,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-12-mini-purple",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 22,
@@ -234,7 +402,15 @@ const dataProduct = [
     star: 5,
     img: iphone9,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-11-white",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 23,
@@ -243,7 +419,15 @@ const dataProduct = [
     star: 5,
     img: iphone10,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-11-red",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 24,
@@ -252,7 +436,15 @@ const dataProduct = [
     star: 3,
     img: iphone11,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-xr-red",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 25,
@@ -261,7 +453,15 @@ const dataProduct = [
     star: 3,
     img: iphone12,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-8-plus",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 26,
@@ -270,7 +470,15 @@ const dataProduct = [
     star: 4,
     img: iphone13,
     categorySlug: "iphone",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "iphone-7-plus",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 27,
@@ -279,7 +487,15 @@ const dataProduct = [
     star: 4,
     img: airpodPro,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "airpod-pro",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 28,
@@ -288,7 +504,15 @@ const dataProduct = [
     star: 5,
     img: airpod3,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "airpod-3",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 29,
@@ -297,7 +521,15 @@ const dataProduct = [
     star: 4,
     img: airpod2,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "airpod-2",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 30,
@@ -306,7 +538,15 @@ const dataProduct = [
     star: 5,
     img: appleAirpod,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "airpod-max",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 31,
@@ -315,7 +555,15 @@ const dataProduct = [
     star: 3,
     img: appleTV,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "apple-tv-box",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 32,
@@ -324,7 +572,15 @@ const dataProduct = [
     star: 4,
     img: keyboard,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "smart-keyboard",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 33,
@@ -333,7 +589,15 @@ const dataProduct = [
     star: 5,
     img: cap1,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "cap-lightning-2m",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 34,
@@ -342,7 +606,15 @@ const dataProduct = [
     star: 4,
     img: cap2,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "cap-lightning-1m",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
   {
     id: 35,
@@ -351,7 +623,15 @@ const dataProduct = [
     star: 3,
     img: cap3,
     categorySlug: "accessories",
+    hightLight: [
+      "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao",
+      "Không gian hiển thị sống động - Màn hình 6.7' Super Retina XDR độ sáng cao, sắc nét",
+      "Trải nghiệm điện ảnh đỉnh cao - Cụm 3 camera 12MP, hỗ trợ ổn định hình ảnh quang học",
+      "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+    ],
     slug: "cap-lightning-0-5m",
+    detail:
+      " được đánh giá là một trong những dòng iPhone có khả năng chụp ảnh siêu ấn tượng cùng với camera góc siêu rộng mang đến khả năng chụp ảnh thiếu sáng một cách đặc biệt. Không những thế, mà dòng iPhone này còn được đánh giá là có dung lượng bộ nhớ tốt, đáp ứng được đầy đủ các công việc hằng ngày Xem thêm thông tin iPhone 13 Pro Max 512GB thiết kế đẳng cấp, mang lại trải nghiệm vượt trội cho người dùng",
   },
 ];
 export default dataProduct;

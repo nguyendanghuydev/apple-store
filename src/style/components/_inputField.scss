@@ -1,0 +1,42 @@
+.form__controls {
+  margin-block: 2rem;
+  font-size: 2rem;
+
+  & label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: start;
+  }
+  & input {
+    border: none;
+    outline: none;
+    background-color: none;
+    border: 1px solid $gray-color;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.3s linear;
+    &:focus {
+      border-color: $purple-color;
+    }
+  }
+  &--radio{
+    display: inline-block;
+    & p{
+      display: inline-block;
+      width: 3rem;
+      margin-left: 2rem;
+    }
+  }
+ 
+  
+}
+.error {
+  position: absolute;
+  color: red;
+  font-size: 1.8rem;
+}
+
