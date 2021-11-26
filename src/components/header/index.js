@@ -88,6 +88,11 @@ function Header() {
             <nav className="header__nav" ref={navRef}>
               <ul className="header__nav-items">
                 <li className="header__nav-item">
+                  <Link onClick={backdropClickHandler} to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="header__nav-item">
                   <Link onClick={backdropClickHandler} to="/iphone">
                     Iphone
                   </Link>

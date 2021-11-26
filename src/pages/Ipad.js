@@ -3,6 +3,8 @@ import dataProduct from "../assets/fake-data/Product";
 
 import FilterBar from "../components/filterbar";
 import Product from "../components/product";
+import Helmet from "../components/Helmet";
+
 
 function Ipad() {
   const [dataIpad, setDataIpad] = useState([]);
@@ -52,10 +54,10 @@ function Ipad() {
   };
 
   return (
-    <>
+    <Helmet title="Ipad">
       <FilterBar grid={gridFilterBar} onSubmit={filterBarHandler} />
       <Product data={dataIpad} grid={gridProduct}></Product>
-    </>
+    </Helmet>
   );
 }
 

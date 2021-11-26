@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { sendCartData, addItemToCart } from "../redux/cartSlice";
 import dataProduct from "../assets/fake-data/Product";
 import ProductCardDetail from "../components/product/ProductCardDetail";
+import Helmet from "../components/Helmet";
+
 function ProductDetail() {
   const [item, setItem] = useState({});
   const dispatch = useDispatch();
@@ -49,14 +51,14 @@ function ProductDetail() {
   };
 
   return (
-    <>
+    <Helmet title="Chi Tiết Sản Phẩm">
       <ProductCardInfo
         item={item}
         buyClickHandler={() => buyClickHandler(item)}
         addToCartClickHandler={() => addToCartClickHandler(item)}
       />
       <ProductCardDetail item={item}></ProductCardDetail>
-    </>
+    </Helmet>
   );
 }
 

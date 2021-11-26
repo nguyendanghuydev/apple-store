@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import dataProduct from "../assets/fake-data/Product";
 
+import Helmet from "../components/Helmet";
 import FilterBar from "../components/filterbar";
 import Product from "../components/product";
+
 
 function Ipad() {
   const [dataAccessory, setDataAccessory] = useState([]);
@@ -52,10 +54,10 @@ function Ipad() {
   };
 
   return (
-    <>
+    <Helmet title="Phụ Kiện">
       <FilterBar grid={gridFilterBar} onSubmit={filterBarHandler} />
       <Product data={dataAccessory} grid={gridProduct}></Product>
-    </>
+    </Helmet>
   );
 }
 

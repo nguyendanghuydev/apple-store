@@ -1,6 +1,9 @@
 import UserCard from "../components/userCard";
 import { useDispatch } from "react-redux";
 import { updateUser } from "../redux/userSlice";
+
+import Helmet from "../components/Helmet";
+
 function User() {
   const dispatch = useDispatch();
   const onSubmit = async (obj) => {
@@ -8,9 +11,9 @@ function User() {
   };
 
   return (
-    <div>
+    <Helmet title="Tài Khoản">
       <UserCard onSubmit={onSubmit} />
-    </div>
+    </Helmet>
   );
 }
 

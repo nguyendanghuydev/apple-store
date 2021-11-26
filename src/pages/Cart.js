@@ -7,6 +7,8 @@ import {
   sendCartData,
 } from "../redux/cartSlice";
 import CartPage from "../components/Cart";
+import Helmet from "../components/Helmet";
+
 function Cart() {
   const userId = useSelector((state) => state.user.id);
   const nameUser = useSelector((state) => state.user.name);
@@ -44,18 +46,20 @@ function Cart() {
   };
 
   return (
-    <div>
-      <CartPage
-        items={items}
-        nameUser={nameUser}
-        phoneNumberUser={phoneNumberUser}
-        addressUser={addressUser}
-        totalPrice={totalPrice}
-        onRemoveItemClickHandler={onRemoveItemClickHandler}
-        onRemoveItemsClickHandler={onRemoveItemsClickHandler}
-        onAddItemClickHandler={onAddItemClickHandler}
-      ></CartPage>
-    </div>
+    <Helmet title="Giỏ Hàng">
+      <div>
+        <CartPage
+          items={items}
+          nameUser={nameUser}
+          phoneNumberUser={phoneNumberUser}
+          addressUser={addressUser}
+          totalPrice={totalPrice}
+          onRemoveItemClickHandler={onRemoveItemClickHandler}
+          onRemoveItemsClickHandler={onRemoveItemsClickHandler}
+          onAddItemClickHandler={onAddItemClickHandler}
+        ></CartPage>
+      </div>
+    </Helmet>
   );
 }
 

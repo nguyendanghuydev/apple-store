@@ -8,14 +8,14 @@ import { getCart } from "../redux/cartSlice";
 import { getUser } from "../redux/userSlice";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import Helmet from "../components/Helmet";
+
 function LogIn() {
   const navigate = useNavigate();
 
   const [err, setErr] = useState(null);
   const validate = Yup.object({
-    email: Yup.string()
-      .email()
-      .required("vui lòng nhập email"),
+    email: Yup.string().email().required("vui lòng nhập email"),
     password: Yup.string()
       .min(8, "mật khẩu ít nhất 8 ký tự")
       .max(20, "mật khẩu không quá 20 ký tự")
@@ -39,34 +39,36 @@ function LogIn() {
   };
 
   return (
-    <Formik
-      initialValues={{
-        email: "",
-        password: "",
-      }}
-      validationSchema={validate}
-      onSubmit={submitHandler}
-    >
-      {() => (
-        <div className="container">
-          <div className="signUp__container">
-            <h2 className="signUp__title">Đăng Nhập</h2>
-            <Form>
-              <InputField label="Email" name="email" type="email" />
-              <InputField label="Mật Khẩu" name="password" type="password" />
+    <Helmet title="Đăng Nhập">
+      <Formik
+        initialValues={{
+          email: "",
+          password: "",
+        }}
+        validationSchema={validate}
+        onSubmit={submitHandler}
+      >
+        {() => (
+          <div className="container">
+            <div className="signUp__container">
+              <h2 className="signUp__title">Đăng Nhập</h2>
+              <Form>
+                <InputField label="Email" name="email" type="email" />
+                <InputField label="Mật Khẩu" name="password" type="password" />
 
-              <button className="signUp__submit" type="submit">
-                Đăng nhập
-              </button>
-            </Form>
-            {err && <p>{err}</p>}
-            <a href="/signup" style={{ color: "blue" }}>
-              nếu chưa có tài khoản bạn có thể đăng ký tại đây
-            </a>
+                <button className="signUp__submit" type="submit">
+                  Đăng nhập
+                </button>
+              </Form>
+              {err && <p>{err}</p>}
+              <a href="/signup" style={{ color: "blue" }}>
+                nếu chưa có tài khoản bạn có thể đăng ký tại đây
+              </a>
+            </div>
           </div>
-        </div>
-      )}
-    </Formik>
+        )}
+      </Formik>
+    </Helmet>
   );
 }
 

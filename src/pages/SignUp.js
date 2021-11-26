@@ -9,6 +9,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getCart } from "../redux/cartSlice";
 import { getUser } from "../redux/userSlice";
+import Helmet from "../components/Helmet";
+
 function SignUp() {
   const dispatch = useDispatch();
   const [err, setErr] = useState(null);
@@ -19,9 +21,7 @@ function SignUp() {
       .max(30, "vui lòng không nhập quá 30 ký tự")
       .min(3, "vui lòng  nhập trên 3 ký tự")
       .required("vui lòng nhập họ và tên"),
-    email: Yup.string()
-      .email()
-      .required("vui lòng nhập email"),
+    email: Yup.string().email().required("vui lòng nhập email"),
     password: Yup.string()
       .min(8, "mật khẩu ít nhất 8 ký tự")
       .max(20, "mật khẩu không quá 20 ký tự")
@@ -62,38 +62,40 @@ function SignUp() {
       });
   };
   return (
-    <Formik
-      initialValues={{
-        userName: "",
-        email: "",
-        password: "",
-        confirmPassword: "",
-      }}
-      validationSchema={validate}
-      onSubmit={submitHandler}
-    >
-      {(formik) => (
-        <div className="container">
-          <div className="signUp__container">
-            <h2 className="signUp__title">Tạo Tài Khoản</h2>
-            <Form>
-              <InputField label="Họ và Tên" name="userName" type="text" />
-              <InputField label="Email" name="email" type="email" />
-              <InputField label="Mật Khẩu" name="password" type="password" />
-              <InputField
-                label="Xác Nhận Mật Khẩu"
-                name="confirmPassword"
-                type="password"
-              />
-              <button className="signUp__submit" type="submit">
-                Đăng Ký
-              </button>
-            </Form>
-            {err && <p>{err}</p>}
+    <Helmet title="Đăng Ký">
+      <Formik
+        initialValues={{
+          userName: "",
+          email: "",
+          password: "",
+          confirmPassword: "",
+        }}
+        validationSchema={validate}
+        onSubmit={submitHandler}
+      >
+        {(formik) => (
+          <div className="container">
+            <div className="signUp__container">
+              <h2 className="signUp__title">Tạo Tài Khoản</h2>
+              <Form>
+                <InputField label="Họ và Tên" name="userName" type="text" />
+                <InputField label="Email" name="email" type="email" />
+                <InputField label="Mật Khẩu" name="password" type="password" />
+                <InputField
+                  label="Xác Nhận Mật Khẩu"
+                  name="confirmPassword"
+                  type="password"
+                />
+                <button className="signUp__submit" type="submit">
+                  Đăng Ký
+                </button>
+              </Form>
+              {err && <p>{err}</p>}
+            </div>
           </div>
-        </div>
-      )}
-    </Formik>
+        )}
+      </Formik>
+    </Helmet>
   );
 }
 
