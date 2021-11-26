@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { Formik, Form } from "formik";
-import InputField from "../../custom-fields/InputField";
+import InputField from "../custom-fields/InputField";
 import * as Yup from "yup";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from "react-redux";
-import { getCart } from "../../redux/cartSlice";
-import { getUser } from "../../redux/userSlice";
-import { auth } from "../../firebase";
+import { getCart } from "../redux/cartSlice";
+import { getUser } from "../redux/userSlice";
+import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 function LogIn() {
   const navigate = useNavigate();
-  
+
   const [err, setErr] = useState(null);
   const validate = Yup.object({
     email: Yup.string()
-      .email("gmail đã tồn tại")
+      .email()
       .required("vui lòng nhập email"),
     password: Yup.string()
       .min(8, "mật khẩu ít nhất 8 ký tự")

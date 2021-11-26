@@ -11,6 +11,13 @@ function Cart(props) {
     onAddItemClickHandler,
   } = props;
 
+  let sumPrice;
+  function format(n) {
+    return n.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  if (totalPrice) {
+    sumPrice = format(String(totalPrice));
+  }
   return (
     <div className="cart">
       <div className="container">
@@ -35,7 +42,7 @@ function Cart(props) {
             <h3 className="cart__info-phone-number">{phoneNumberUser}</h3>
             <p className="cart__info-address">{addressUser}</p>
             <h3 className="cart__info-total-price">
-              Tổng Cộng Giá : {totalPrice}
+              Tổng Cộng Giá : {sumPrice}
             </h3>
             <button className="cart__info-btn">Mua Hàng</button>
           </div>

@@ -6,8 +6,8 @@ import Ipad from "../pages/Ipad";
 import Macbook from "../pages/Macbook";
 import Accessory from "../pages/Accessory";
 import ProductDetail from "../pages/ProductDetail";
-import LogIn from "../components/logIn";
-import SignUp from "../components/signUp";
+import LogIn from "../pages/Login";
+import SignUp from "../pages/SignUp";
 import User from "../pages/User.js";
 import Cart from "../pages/Cart";
 
@@ -23,6 +23,8 @@ function RoutesPage() {
       <Route path="/login" element={<LogIn />}></Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/product/:slug" element={<ProductDetail />}></Route>
+      <Route path="*" element={<h1>Trang Này Chưa Cập Nhật </h1>}></Route>
+
       {userId && <Route path="user" element={<User />}></Route>}
       {userId && <Route path="/cart" element={<Cart/>}></Route>}
     </Routes>

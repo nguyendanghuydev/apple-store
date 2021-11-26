@@ -1,14 +1,14 @@
 import { Formik, Form } from "formik";
-import InputField from "../../custom-fields/InputField";
+import InputField from "../custom-fields/InputField";
 import * as Yup from "yup";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
-import { auth, db } from "../../firebase";
+import { auth, db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { getCart } from "../../redux/cartSlice";
-import { getUser } from "../../redux/userSlice";
+import { getCart } from "../redux/cartSlice";
+import { getUser } from "../redux/userSlice";
 function SignUp() {
   const dispatch = useDispatch();
   const [err, setErr] = useState(null);
@@ -20,7 +20,7 @@ function SignUp() {
       .min(3, "vui lòng  nhập trên 3 ký tự")
       .required("vui lòng nhập họ và tên"),
     email: Yup.string()
-      .email("gmail đã tồn tại")
+      .email()
       .required("vui lòng nhập email"),
     password: Yup.string()
       .min(8, "mật khẩu ít nhất 8 ký tự")

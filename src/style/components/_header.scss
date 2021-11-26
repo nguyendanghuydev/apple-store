@@ -1,3 +1,4 @@
+
 .header {
   height: $max-header-height;
   width: 100%;
@@ -5,18 +6,17 @@
   position: relative;
   background-color: $purple-color;
   color: $white-color;
-  transition: all 0.5s linear;
-  &.shrink {
-    position: fixed;
-    width: 100%;
-    box-shadow: 3px 6px 10px rgba($color: #000000, $alpha: 0.1);
-    transition: all 0.5s linear;
-  }
+  transition: all 1s linear;
   @include tablet {
     height: $max-header-tablet-height;
   }
   @include mobile {
     height: $max-header-mobile-height;
+  }
+  &.shrink {
+    position: fixed;
+    width: 100%;
+    transition: all 1s linear;
   }
 
   .container {

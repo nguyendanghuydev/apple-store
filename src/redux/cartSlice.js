@@ -65,6 +65,7 @@ const cartSlice = createSlice({
       const existingItem = state.items.find((item) => item.id === id);
       state.totalQuantity -= existingItem.quantity;
       existingItem.totalPrice -= Number(existingItem.totalPrice);
+      state.items = state.items.filter((item) => item.id !== id)
     },
   },
   extraReducers: {

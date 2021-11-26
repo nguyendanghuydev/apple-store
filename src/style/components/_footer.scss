@@ -2,7 +2,9 @@
   margin-top: auto;
   padding-block: 4rem;
   border-top: 2px solid $dark-white-color;
-
+  @include mobile{
+    text-align: center;
+}
   ul li:first-child {
     font-size: 2rem;
     margin-bottom: 2rem;

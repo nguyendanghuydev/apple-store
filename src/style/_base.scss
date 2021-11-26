@@ -35,35 +35,36 @@ a {
   @include tablet {
     padding-inline: 1.3rem;
   }
-  @include mobile{
-      padding-inline: 1.5rem;
+  @include mobile {
+    padding-inline: 1.5rem;
   }
 }
 .grid {
   display: grid;
 }
 
-main{
-  padding-block: 5rem; 
+main {
+  padding-block: 5rem;
+  
 }
 
 @each $number in $numbers {
-    .grid-col-#{$number}{
-      grid-template-columns: repeat($number,1fr);
-    }
+  .grid-col-#{$number} {
+    grid-template-columns: repeat($number, 1fr);
+  }
 }
 
 @each $number in $numbers {
-  .grid-col-md-#{$number}{
+  .grid-col-md-#{$number} {
     @include tablet {
-      grid-template-columns: repeat($number,1fr);
+      grid-template-columns: repeat($number, 1fr);
     }
   }
 }
 @each $number in $numbers {
-  .grid-col-sm-#{$number}{
+  .grid-col-sm-#{$number} {
     @include mobile {
-      grid-template-columns: repeat($number,1fr);
+      grid-template-columns: repeat($number, 1fr);
     }
   }
 }

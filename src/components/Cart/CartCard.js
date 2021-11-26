@@ -5,6 +5,7 @@ function CartCard(props) {
     onAddItemClickHandler,
     onRemoveItemClickHandler,
     onRemoveItemsClickHandler,
+    
   } = props;
   let price;
   let totalPrice;
@@ -12,10 +13,10 @@ function CartCard(props) {
     return n.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
   if (item.price) {
-    price = format(+item.price);
+    price = format(String(item.price));
   }
   if(item.totalPrice){
-      return format(+item.totalPrice)
+    totalPrice =   format(String(item.totalPrice))
   }
   return (
     <div className="cart-card">

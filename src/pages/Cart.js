@@ -14,7 +14,12 @@ function Cart() {
   const addressUser = useSelector((state) => state.user.address);
   const cart = useSelector((state) => state.cart);
   const items = useSelector((state) => state.cart.items);
-  const totalPrice = 0;
+  const priceItems = items.map((item) => {
+    return item.totalPrice;
+  });
+  const totalPrice = priceItems.reduce((item1, item2) => {
+    return item1 + item2;
+  }, 0);
   const initRef = useRef(true);
   const dispatch = useDispatch();
 

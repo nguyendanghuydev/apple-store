@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart, Person, Logout } from "@mui/icons-material";
@@ -18,6 +19,21 @@ function Header() {
   const totalCart = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scroll = window.pageYOffset;
+      if (headerRef.current) {
+        if (scroll > 500) {
+          headerRef.current.classList.add("shrink");
+        } else {
+          headerRef.current.classList.remove("shrink");
+        }
+      }
+    });
+    return () => {
+      return window.removeEventListener("scroll");
+    };
+  }, []);
 
   const logOutClickHandler = () => {
     signOut(auth)
@@ -54,7 +70,7 @@ function Header() {
 
   return (
     <>
-      <header className="header shrink" ref={headerRef}>
+      <header className="header" ref={headerRef}>
         <div className="container">
           <div className="header__container">
             <div
