@@ -109,7 +109,7 @@ function Header() {
                 </li>
                 <li className="header__nav-item">
                   <Link onClick={backdropClickHandler} to="/accessories">
-                    phụ kiện
+                    Phụ Kiện
                   </Link>
                 </li>
               </ul>
@@ -142,7 +142,7 @@ function Header() {
             {!userId && (
               <div className="header__nav-item">
                 <Link onClick={backdropClickHandler} to="/login">
-                  Log in
+                  Đăng Ký
                 </Link>
               </div>
             )}
